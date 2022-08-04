@@ -4,12 +4,15 @@
   --poppins: "Poppins", sans-serif;
   --roboto: "Roboto", sans-serif;
   --primary-text-color: #ffffff;
+  --text-dark: #8f9ca9;
   --body-bg: #02050e;
   --body-width: 1440px;
   --container-width: 1200px;
   --btn-color: #1e50ff;
   --border-color: #1e50ff;
+  --profile-border-color: #ffffff;
   --highlight-bg: #1e50ff;
+  --card-bg: #272d37;
 }
 *,
 *::after,
@@ -28,7 +31,10 @@ h6,
 p,
 audio,
 video,
-iframe {
+iframe,
+ol,
+ul,
+dl {
   margin: 0;
   padding: 0;
 }
@@ -38,13 +44,24 @@ body {
   font-size: 16px;
   background-color: var(--body-bg);
   max-width: var(--body-width);
+  color: var(--primary-text-color);
   width: 100%;
   margin-inline: auto;
   overflow-x: hidden;
 }
-
+img {
+  max-width: 100%;
+}
 .container {
   max-width: var(--container-width);
   width: 98%;
   margin-inline: auto;
+}
+
+/* global css  */
+.highlight {
+  background-color: var(--highlight-bg);
+}
+.text-dark {
+  color: var(--text-dark) !important;
 }

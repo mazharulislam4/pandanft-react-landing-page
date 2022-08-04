@@ -1,0 +1,13 @@
+.list_item {
+  margin-block: 8px;
+}
+
+.list_item a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.list_item a:hover {
+  color: var(--primary-text-color);
+}
